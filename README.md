@@ -1,1 +1,12 @@
-# avaliacao-tecnica-acedata
+# Avaliação Técnica - Acedata
+
+Repositório com exercícios desenvolvidos para avaliação de lógica de programação.
+
+## Tecnologias 
+* Python 3
+
+## Status Exercícios
+* [ ] Exercício 01: Calculo hora
+* [ ] Exercício 02: Sequência de números 
+* [ ] Exercício 03: Números de Fibonacci
+
