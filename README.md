@@ -7,6 +7,6 @@ Repositório com exercícios desenvolvidos para avaliação de lógica de progra
 
 ## Status Exercícios
 * [x] Exercício 01: Calculo hora
-* [ ] Exercício 02: Sequência de números 
+* [x] Exercício 02: Sequência de números 
 * [ ] Exercício 03: Números de Fibonacci
 
