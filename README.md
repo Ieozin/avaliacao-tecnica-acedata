@@ -6,7 +6,7 @@ Repositório com exercícios desenvolvidos para avaliação de lógica de progra
 * Python 3
 
 ## Status Exercícios
-* [ ] Exercício 01: Calculo hora
+* [x] Exercício 01: Calculo hora
 * [ ] Exercício 02: Sequência de números 
 * [ ] Exercício 03: Números de Fibonacci
 
