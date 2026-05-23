@@ -1,13 +1,16 @@
-sequencia_numero = int(print("Olá, quantos números da sequência de Fibonacci você quer?:"))
+sequencia_numero = int(input("Olá, quantos números da sequência de Fibonacci você quer?:"))
 print("Estes são os números:")
 
-x = 0
+x = 1
 y = 1
 
 for i in range(sequencia_numero):
     print(x)
-    x = x + y
-    y = x
+    z = x
+    x = y 
+    y = z + y
+    
+    
 
 
 
@@ -16,9 +19,3 @@ for i in range(sequencia_numero):
 
 
 
-
-
-
-#Escreva um programa que carregue um valor N pelo teclado e:
-#a) Imprima os N primeiros números da sequência de Fibonacci;
-#b) Indique se N faz parte da sequência de Fibonacci.
