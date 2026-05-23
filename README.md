@@ -12,7 +12,7 @@ Clone o repositório:
 ```bash
 git clone https://github.com/Ieozin/avaliacao-tecnica-acedata.git
 cd avaliacao-tecnica-acedata
-``
+```
 
 Execute o exercicio:
 
