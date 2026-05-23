@@ -4,18 +4,12 @@ print("Estes são os números:")
 x = 1
 y = 1
 
+fibonnaci = []
+
 for i in range(sequencia_numero):
-    print(x)
+    fibonnaci.append(x)
     z = x
     x = y 
     y = z + y
-    
-    
 
-
-
-
-
-
-
-
+print(fibonnaci)
