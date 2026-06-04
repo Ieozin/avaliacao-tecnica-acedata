@@ -1,7 +1,33 @@
 # Entradas do usuário
-salario_hora = float(input("Informe o seu salário por hora: "))
-horas_mes = float(input("Informe a quantidade de horas que você trabalhou no mês: "))
-filhos_menos_14 = int(input("Informe quantos filhos menores de 14 anos que você tem: "))
+while True:
+    try:
+        salario_hora = float(input("Informe o seu salário por hora: "))
+        if salario_hora < 0:
+            print("Erro! Salário negativo, digite novamente")
+            continue
+        break
+    except ValueError:
+        print("Erro! Salário inválido, digite novamente")
+
+while True:
+    try:
+        horas_mes = float(input("Informe a quantidade de horas que você trabalhou no mês: "))
+        if horas_mes < 0:
+            print("Erro! Horas negativas, digite novamente")
+            continue
+        break
+    except ValueError:
+        print("Erro! Horas inválidas, digite novamente")
+
+while True:
+    try:
+        filhos_menos_14 = int(input("Informe quantos filhos menores de 14 anos que você tem: "))
+        if filhos_menos_14 < 0:
+            print("Erro! Quantidade de filhos inexistente")
+            continue
+        break
+    except ValueError:
+        print("Erro! Quantidade de filhos inválida, digite novamente")
 
 # Calcula salário bruto
 salario_bruto = salario_hora * horas_mes
