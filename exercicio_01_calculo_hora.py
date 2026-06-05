@@ -1,3 +1,11 @@
+# Constantes de variávies
+SALARIO_FAIXA_MIN = 788
+SALARIO_FAIXA_MAX = 1100
+
+SALARIO_FAMILIA_MIN = 11.90
+SALARIO_FAMILIA_MID = 18.50
+SALARIO_FAMILIA_MAX = 30.50
+
 # Entradas do usuário
 while True:
     try:
@@ -33,14 +41,14 @@ while True:
 salario_bruto = salario_hora * horas_mes
 
 # Define salário família 
-if salario_bruto <= 788:
-    salario_familia = 30.50
+if salario_bruto <= SALARIO_FAIXA_MIN:
+    salario_familia = SALARIO_FAMILIA_MAX
 
-elif salario_bruto <= 1100:
-    salario_familia = 18.50
+elif salario_bruto <= SALARIO_FAIXA_MAX:
+    salario_familia = SALARIO_FAMILIA_MID
 
 else:   
-    salario_familia = 11.90
+    salario_familia = SALARIO_FAMILIA_MIN
 
 # Calcula salário final 
 salario_familia_final = salario_familia * filhos_menos_14
