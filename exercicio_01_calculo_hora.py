@@ -1,7 +1,8 @@
-# Constantes de variávies
+# Constantes do salário bruto
 SALARIO_FAIXA_MIN = 788
 SALARIO_FAIXA_MAX = 1100
 
+# Constantes do salário família
 SALARIO_FAMILIA_MIN = 11.90
 SALARIO_FAMILIA_MID = 18.50
 SALARIO_FAMILIA_MAX = 30.50
@@ -31,7 +32,7 @@ while True:
     try:
         filhos_menos_14 = int(input("Informe quantos filhos menores de 14 anos que você tem: "))
         if filhos_menos_14 < 0:
-            print("Erro! Quantidade de filhos inexistente")
+            print("Erro! Quantidade de filhos negativa, digite novamente")
             continue
         break
     except ValueError:
@@ -56,12 +57,12 @@ salario_liquido = salario_bruto + salario_familia_final
 
 # Exibe resultado com condicional para sem filhos
 print("--Folha de pagamento--")
-print(f"O salário bruto será de:R${salario_bruto:.2f}")
+print(f"O salário bruto será de: R${salario_bruto:.2f}")
 
 if filhos_menos_14 > 0:
-    print(f"O salário família será de R${salario_familia:.2f} por cada filho") 
-    print(f"O salario família final será de R${salario_familia_final:.2f}")
+    print(f"O salário família será de R${salario_familia:.2f} por filho") 
+    print(f"O salário família final será de R${salario_familia_final:.2f}")
 else:
-     print("Você não tem direito á salário família")
+     print("Não há filhos para calcular o benefício")
        
 print(f"O salário líquido será de R${salario_liquido:.2f}")
