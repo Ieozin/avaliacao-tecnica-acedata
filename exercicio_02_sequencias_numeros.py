@@ -14,8 +14,13 @@ numeros = []
 
 # Recebe os números e armazena na lista
 for i in range(numeros_sequencia):
-    n = float(input("Digite um número: "))
-    numeros.append(n)
+    while True:
+        try:
+            n = float(input("Digite um número: "))
+            numeros.append(n)
+            break
+        except ValueError:
+            print("Erro! Número inválido, tente novamente!")
 
 # Exibe resultado
 if len(numeros) > 0:
