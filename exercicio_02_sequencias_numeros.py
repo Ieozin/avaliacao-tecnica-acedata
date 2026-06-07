@@ -1,6 +1,14 @@
 # Entradas do usuário
-numeros_sequencia = int(input("Quantos números você vai digitar?:"))
-
+while True:
+    try:
+        numeros_sequencia = int(input("Quantos números você vai digitar?:"))
+        if numeros_sequencia < 0:
+            print("Erro! A quantidade de números não pode ser negativa, tente novamente.")
+            continue
+        break
+    except ValueError:
+        print("Erro! Número inválido, tente novamente")
+    
 # Cria lista vazia
 numeros = []
 
