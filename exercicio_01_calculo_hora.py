@@ -11,7 +11,7 @@ SALARIO_FAMILIA_MAX = 30.50
 while True:
     try:
         salario_hora = float(input("Informe o seu salário por hora: "))
-        if salario_hora < 0:
+        if salario_hora <= 0:
             print("Erro! Salário negativo, digite novamente")
             continue
         break
