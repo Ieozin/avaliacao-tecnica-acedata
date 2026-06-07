@@ -18,6 +18,10 @@ for i in range(numeros_sequencia):
     numeros.append(n)
 
 # Exibe resultado
-print(f"A sequência de números é {numeros}")
-print(f"O maior número da sequência é {max(numeros)}")
-print(f"O menor número da sequência é {min(numeros)}")
+if len(numeros) > 0:
+    print(f"A sequência de números é {numeros}")
+    print(f"O maior número da sequência é {max(numeros)}")
+    print(f"O menor número da sequência é {min(numeros)}")
+else:
+    print("Você não digitou nenhum número.")
+
