@@ -10,8 +10,8 @@ while True:
         print("Erro! Entrada inválida, tente novamente!")
 
 # Valores iniciais da sequência
-x = 1
-y = 1
+anterior = 1
+atual = 1
 
 # Listas para armazenar sequência
 fibonacci = []
@@ -19,13 +19,13 @@ fibonacci_verificacao = []
 
 # Gera sequência pela entrada
 for i in range(sequencia_numero):
-    fibonnaci.append(x)
+    fibonacci.append(x)
     z = x
     x = y 
     y = z + y
 
 # Exibe resultado 
-print(f"Estes são os números: {fibonnaci}")
+print(f"Estes são os números: {fibonacci}")
 
 # Entradas para verificação 
 while True:
@@ -44,13 +44,13 @@ y = 1
 
 # Gera sequência para verificar
 while x <= verificar_numero:
-    fibonnaci_01.append(x)
+    fibonacci_verificacao.append(x)
     z = x
     x = y 
     y = z + y
 
 # Exibe resultado 
-if verificar_numero in fibonnaci_01:
+if verificar_numero in fibonacci_verificacao:
     print(f"O número {verificar_numero} que você escolheu está na sequência de Fibonacci!")
 else:
     print(f"O número {verificar_numero} que você escolheu não está na sequência de Fibonacci!")    
