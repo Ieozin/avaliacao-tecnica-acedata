@@ -28,7 +28,15 @@ for i in range(sequencia_numero):
 print(f"Estes são os números: {fibonnaci}")
 
 # Entradas para verificação 
-verificar_numero = int(input("Qual número você quer verificar se está na sequência?:"))
+while True:
+    try:
+        verificar_numero = int(input("Qual número você quer verificar se está na sequência?:"))
+        if verificar_numero < 0:
+            print("Erro! O número não pode ser negativo, tente novamente")
+            continue
+        break
+    except ValueError:
+        print("Erro! Entrada inválida, tente novamente!")
 
 # Reinicia valor
 x = 1
