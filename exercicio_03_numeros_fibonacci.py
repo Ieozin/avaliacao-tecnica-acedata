@@ -1,5 +1,13 @@
 # Entradas do usuário 
-sequencia_numero = int(input("Olá, quantos números da sequência de Fibonacci você quer?:"))
+while True:
+    try:
+        sequencia_numero = int(input("Olá, quantos números da sequência de Fibonacci você quer?: "))
+        if sequencia_numero < 0:
+            print("Erro! Você inseriu uma quantidade negativa, tente novamente")
+            continue
+        break
+    except ValueError:
+        print("Erro! Entrada inválida, tente novamente!")
 
 # Valores iniciais da sequência
 x = 1
