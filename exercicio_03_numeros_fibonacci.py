@@ -39,15 +39,15 @@ while True:
         print("Erro! Entrada inválida, tente novamente!")
 
 # Reinicia valor
-x = 1
-y = 1
+anterior = 1
+atual = 1
 
 # Gera sequência para verificar
-while x <= verificar_numero:
-    fibonacci_verificacao.append(x)
-    z = x
-    x = y 
-    y = z + y
+while anterior <= verificar_numero:
+    fibonacci_verificacao.append(anterior)
+    proximo = anterior + atual
+    anterior = atual 
+    atual = proximo
 
 # Exibe resultado 
 if verificar_numero in fibonacci_verificacao:
