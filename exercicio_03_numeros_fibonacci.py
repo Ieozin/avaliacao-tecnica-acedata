@@ -19,11 +19,11 @@ fibonacci_verificacao = []
 
 # Gera sequência pela entrada
 for i in range(sequencia_numero):
-    fibonacci.append(x)
-    z = x
-    x = y 
-    y = z + y
-
+    fibonacci.append(anterior)
+    proximo = anterior + atual
+    anterior = atual
+    atual = proximo
+   
 # Exibe resultado 
 print(f"Estes são os números: {fibonacci}")
 
