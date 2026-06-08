@@ -14,8 +14,8 @@ x = 1
 y = 1
 
 # Listas para armazenar sequência
-fibonnaci = []
-fibonnaci_01 = []
+fibonacci = []
+fibonacci_verificacao = []
 
 # Gera sequência pela entrada
 for i in range(sequencia_numero):
