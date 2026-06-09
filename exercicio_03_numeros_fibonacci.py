@@ -12,20 +12,40 @@ while True:
 # Valores iniciais da sequência
 anterior = 1
 atual = 1
+antepenultimo = 1
 
 # Listas para armazenar sequência
 fibonacci = []
 fibonacci_verificacao = []
 
+# Começo da sequência
+if sequencia_numero >= 1:
+    fibonacci.append(1)
+
+if sequencia_numero >= 2:
+    fibonacci.append(1)
+
+if sequencia_numero >= 3:
+    fibonacci.append(2)
+
+# Valores iniciais da sequência
+antepenultimo = 1
+anterior = 1
+atual = 2
+
 # Gera sequência pela entrada
-for i in range(sequencia_numero):
-    fibonacci.append(anterior)
-    if atual == eval:
-        proximo = anterior + atual + anterior
-        anterior = atual
-        atual = proximo
-    
-   
+while len(fibonacci) < sequencia_numero:
+    if atual % 2 == 0:
+        proximo = antepenultimo + anterior + atual
+    else:
+        proximo = anterior + atual
+
+    fibonacci.append(proximo)
+
+    antepenultimo = anterior
+    anterior = atual
+    atual = proximo
+            
 # Exibe resultado 
 print(f"Estes são os números: {fibonacci}")
 
@@ -40,17 +60,29 @@ while True:
     except ValueError:
         print("Erro! Entrada inválida, tente novamente!")
 
-# Reinicia valor
+# Começo da sequência de verificação
+if verificar_numero >= 1:
+    fibonacci_verificacao.append(1)
+    fibonacci_verificacao.append(1)
+
+# Reinicia valores
+antepenultimo = 1
 anterior = 1
-atual = 1
+atual = 2
 
 # Gera sequência para verificar
-while anterior <= verificar_numero:
-    fibonacci_verificacao.append(anterior)
-    proximo = anterior + atual
-    anterior = atual 
-    atual = proximo
+while atual <= verificar_numero:
+    fibonacci_verificacao.append(atual)
 
+    if atual % 2 == 0:
+        proximo = antepenultimo + anterior + atual
+    else:
+        proximo = anterior + atual
+
+    antepenultimo = anterior
+    anterior = atual
+    atual = proximo
+    
 # Exibe resultado 
 if verificar_numero in fibonacci_verificacao:
     print(f"O número {verificar_numero} que você escolheu está na sequência de Fibonacci!")
