@@ -26,6 +26,9 @@ for i in range(numeros_sequencia):
 if len(numeros) > 0:
     print(f"A sequência de números é {numeros}")
     print(f"O maior número da sequência é {max(numeros)}")
+    maior_numero = max(numeros) 
+    numeros.remove(maior_numero)
+    print(f"O segundo maior número da sequência é {max(numeros)}")
     print(f"O menor número da sequência é {min(numeros)}")
 else:
     print("Você não digitou nenhum número.")
